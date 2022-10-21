@@ -1,0 +1,16 @@
+View :  Su responsabilidad es mostrarle la información al usuario, y como este interactua 
+con ella para solicitar algun tipo de respuesta a traves de la UI.
+
+Model: Es una o más clases que se encargaran de proveer datos, ya sea una bdd u otra.
+
+
+ViewModel: Es la capa intermedia, encargada de comunicarse con las 2 anteriores.
+**Comunicaciones de ViewModel con : 
+1) View: la vista le envia las interacciones del usuario, le dice que hizo y nada más.
+2) Model: el VM se encarga de solicitar la informacion precisa correspondiente a
+las acciones que realizo el usuario (las cuales fueron informadas por view)
+
+Una vez que el viewmodel recibe la respuesta de su solicitud al model
+el viewmodel se encarga de asignarle la informacion a la vista en el lugar que corresponda, 
+para que la view sea actualizada y muestre los cambios de ser necesarios.
+
