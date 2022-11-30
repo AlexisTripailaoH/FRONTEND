@@ -12,7 +12,7 @@ function App() {
   return (
     <AuthContextProvider>
       <BrowserRouter>
-        <Routes>
+        <Routes> 
           <Route path={PRIVATE} element={<PrivateRoute />}>
             <Route index element={<Private />} />
             <Route path={LOGOUT} element={<Logout />} />
